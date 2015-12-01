@@ -1,0 +1,112 @@
+/* 
+    Created on : 14/11/2015, 13:07:39
+    Author     : Victor Freire
+*/
+
+.box {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    margin-top: -10%;
+    margin-left: 24px;
+    width: 160px;
+    height: 160px;
+    -webkit-transform-style: preserve-3d;
+    z-index: 1;
+}
+/*.box:after {
+    content: "";
+    position: absolute;
+    margin: 25px 0 0 25px;
+    width: 110px;
+    height: 110px;
+    background-color: #666;
+    box-shadow: 0px 0px 40px 25px #666;
+    -webkit-transform: rotateX(90deg) translateZ(-260px);
+    -webkit-animation: anim-shadow .2s linear 8s both;
+}*/
+.box>div {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+}
+.box div:nth-child(1) {
+    -webkit-transform: translateZ(80px);
+    background-color: #303030;
+}
+.box div:nth-child(2) {
+    -webkit-transform: rotateY(90deg) translateZ(80px);
+    background-color: #333;
+}
+.box div:nth-child(3) {
+    -webkit-transform: rotateY(180deg) translateZ(80px) rotate(180deg);
+    background-color: #333;
+}
+.box div:nth-child(4) {
+    -webkit-transform: rotateY(-90deg) translateZ(80px) rotate(180deg);
+    background-color: #333;
+}
+.box div:nth-child(5) {
+    -webkit-transform: rotateX(-90deg) translateZ(80px) rotate(90deg);
+    background-color: #3a3a3a;
+}
+.box div:nth-child(6) {
+    -webkit-transform : rotateX(90deg) translateZ(80px);
+    background-color: #555;
+}
+#box1 {
+    -webkit-animation: anim-box-1 3s ease 3.5s both;
+    z-index:-2;
+}
+#box1 div:nth-child(5) {
+    -webkit-transform: rotateX(-90deg) translateZ(80px) rotate(0deg);
+}
+#box2 {
+    -webkit-animation: anim-box-2 7s ease 0s both;
+    z-index: -1;
+}
+#box3 {
+    opacity: 0;
+    -webkit-animation: anim-box-3 5.5s ease 2s both;
+    z-index: 1;
+}
+#box4 {
+    opacity: 0;
+    -webkit-animation: anim-box-4 6s ease 2s both;
+    z-index: -1;
+}
+#box5 {
+    -webkit-animation: anim-box-5 4.5s ease 3.5s both;
+    z-index: -2;
+}
+.shadow {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    z-index: -3;
+}
+.shadow div {
+    display: inline-block;
+    position: relative;
+    margin: 0 30px 0 45px;
+    width: 110px;
+    height: 110px;
+    background-color: #555;
+    box-shadow: 0px 0px 40px 30px #555;
+    transform: rotateX(90deg);
+}
+.shadow div:nth-child(1){
+    -webkit-animation: shadow-box1 3s ease 3.5s both;
+}
+.shadow div:nth-child(2) {
+    -webkit-animation: shadow-box2 7s ease 0s both;
+}
+.shadow div:nth-child(3) {
+    -webkit-animation: shadow-box3 5.5s ease 2s both;
+}
+.shadow div:nth-child(4) {
+    -webkit-animation: shadow-box4 5.5s ease 2s both;
+}
+.shadow div:nth-child(5) {
+    -webkit-animation: shadow-box5 3s ease 3.5s both;
+}

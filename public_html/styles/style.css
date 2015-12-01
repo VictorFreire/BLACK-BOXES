@@ -1,0 +1,40 @@
+/*
+    Created on : 14/11/2015, 13:19:23
+    Author     : Victor Freire
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Wallpoet);
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, #ededed 0%, #d9d9d9 10%, #ccc 20%, #666 60%, #999 70%, #ccc 80%, #eee 90%);
+    /*-webkit-animation: bg-anim .2s linear 8s both;*/
+    z-index: -99;
+}
+h1 {
+    position: relative;
+    margin: 0;
+    top: 10px;
+    color: #2b2b2b;
+    top: 20px;
+    font: 92pt 'Wallpoet', sans-serif;
+    font-weight: 400;
+    text-shadow: 0px -2px 0px #202020;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-perspective: 800px;
+    -webkit-perspective-origin: 50% 50%;
+}
