@@ -3,6 +3,7 @@
     Author     : Victor Freire
 */
 
+
 @-webkit-keyframes bg-anim {
     0%, 50% {
         background: -webkit-linear-gradient(top, #eee, #eee, #eee, #eee, #eee, #eee, #eee, #ddd, #b8b8b8, #aaa, #ddd, #eee, #eee, #fff);
