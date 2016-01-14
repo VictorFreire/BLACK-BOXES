@@ -1,2 +1,2 @@
 # BLACK-BOXES
-Animated boxes/cubes implementing transform properties, adding 3D perspective.
+Animated boxes/cubes giving it 3D perspective by implement some transform properties.
