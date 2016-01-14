@@ -28,7 +28,6 @@
         transform: rotateX(135deg);
     }
 }
-
 @keyframes anim-box-2 {
     0% {
         transform: rotate(-720deg) translateX(180px) translateZ(-20000px);
